@@ -8,8 +8,6 @@ import {
   loadSearchHistory,
 } from './storage'
 
-// jsdom provides localStorage in the test environment
-
 beforeEach(() => {
   localStorage.clear()
 })

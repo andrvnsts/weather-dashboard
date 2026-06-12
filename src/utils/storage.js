@@ -1,5 +1,3 @@
-// ── Private helpers ──────────────────────────────────────────────────────────
-
 function saveToStorage(key, value) {
   localStorage.setItem(key, JSON.stringify(value))
 }
@@ -13,8 +11,6 @@ function getFromStorage(key) {
     return null
   }
 }
-
-// ── Public API ────────────────────────────────────────────────────────────────
 
 export function saveTheme(theme) {
   saveToStorage('weather_theme', theme)

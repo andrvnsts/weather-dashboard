@@ -22,7 +22,7 @@ describe('formatTemperature', () => {
 
 describe('formatTime', () => {
   it('returns HH:MM with leading zeros', () => {
-    const date = new Date(2026, 2, 19, 9, 3) // 09:03
+    const date = new Date(2026, 2, 19, 9, 3)
     expect(formatTime(date)).toBe('09:03')
   })
 
@@ -34,7 +34,6 @@ describe('formatTime', () => {
 
 describe('formatDate', () => {
   it('returns string in "Thu, 19 Mar" format', () => {
-    // 2026-03-19 is a Thursday
     const date = new Date(2026, 2, 19)
     expect(formatDate(date)).toBe('Thu, 19 Mar')
   })
